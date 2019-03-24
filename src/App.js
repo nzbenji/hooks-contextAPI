@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Notes from './Notes'
 
 const App = (props) => {
   const [count, setCount] = useState(props.count)
@@ -11,6 +12,10 @@ const App = (props) => {
       <button onClick={ () => setCount(count -1) }>-1</button>
       <button onClick={ () => setCount(props.count) }>Reset</button>
       <input value={text} onChange={(e) => setText(e.target.value)}/>
+
+      <div>
+        <Notes />
+      </div>
     </div>
   )
 }
