@@ -22,6 +22,7 @@ const Notes = () => {
         setNotes(notes.filter(note => note.title !== title))
     }
 
+
     return (
         <div>
             <h1>Notes</h1>
